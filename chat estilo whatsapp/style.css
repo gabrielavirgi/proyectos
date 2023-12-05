@@ -1,0 +1,93 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.chat-container {
+    color: white;
+    width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 100vh;
+    background-color: #233f52;
+    box-sizing: border-box;
+    gap: 10px;
+    padding: 30px;
+
+}
+.chat-container .bubble-container{
+     
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+ }
+
+.chat-container .bubble-container.left{
+    width: 50%;
+    margin-right: auto;
+    align-items: flex-start;
+}     
+.chat-container .bubble-container.right{
+    width: 50%;
+    margin-left: auto;
+    align-items: flex-end;
+}     
+.chat-container .bubble-container .bubble-text {
+    color: white;
+}
+.chat-container .bubble-container.left .bubble-text > div{
+    position: relative;
+    background-color: #202146;
+    display: inline-flex;
+}
+.chat-container .bubble-container.right .bubble-text > div{
+    position: relative;
+    background-color: #005c4b;
+   
+
+}.chat-container .bubble-container .bubble .bubble-text > div{
+    padding: 8px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.chat-container .bubble-container .bubble-text .bubble-info{
+   font-size: 12px;
+   color: rgb(255, 255, 255,0.7);
+   padding: 0px 10px;
+   text-align: right;
+   width: 80px;
+   min-width: 80px;
+   max-width: 80px;
+   box-sizing: border-box;
+   
+   }
+ .chat-container .bubble-container.left .bubble:nth-child(1) .bubble-text > div::before {
+    content:'';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-right: solid 5px #202146;
+    border-top: solid 5px #202146;
+    border-left: solid 5px transparent;
+    border-bottom: solid 5px transparent;
+    left: -6px;
+    top: 0;
+ }
+
+ .chat-container .bubble-container.right .bubble:nth-child(1) .bubble-text > div::before {
+    content:'';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: solid 5px #005c4b;
+    border-top: solid 5px #005c4b;
+    border-right: solid 5px transparent;
+    border-bottom: solid 5px transparent;
+    right: -5px;
+    top: 0;
+ }
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>proyecto I</title>
+   <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    
+    <div class="form-container">
+        <div class="login-container">
+            <h2>welcome</h2>
+            <p>seleciona el metodo de autenticación</p>
+
+            <form action="">
+                <p>
+                    <label for="username">username</label>
+                    <input  class="input" type="text" name="username" id="username">
+                </p>
+
+                <p>
+                    <label for="password">password</label>
+                    <input class="input" type="text" name="password" id="password">
+                </p>
+
+                <div class="options">
+                    <div>
+                        remember me
+                        <input type="checkbox" name="remember" id="remember">
+                    </div>
+                    <div>
+                        <a href="#">Olvide mi password</a>
+                    </div>
+                </div>
+
+                <p>
+                    <input type="submit" class="btn btn-login" value="log in">
+                </p>
+                <div class="providers">
+                    <span>choose another method to authenticate</span>
+                    <button class="btn btn-google">Google</button>
+                    <button class="btn btn-facebook">Facebook</button>  
+                    <button class="btn btn-twitter">twitter</button>
+                </div>
+            </form> 
+        </div>
+        <div class="welcome-screen-container"></div>
+    </div>
+</body>
+</html>
